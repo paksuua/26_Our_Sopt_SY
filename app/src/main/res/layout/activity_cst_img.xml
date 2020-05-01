@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img_cst"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/rooky"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"/>
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="네네고양이 가재울점"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toBottomOf="@id/img_cst"
+        app:layout_constraintStart_toStartOf="@id/img_cst"/>
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="18~20 분"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toBottomOf="@id/img_cst"
+        app:layout_constraintEnd_toEndOf="@id/img_cst"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="200dp"/>
+
+    <TextView
+        android:id="@+id/tv_sub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="ㄴㅇ린아ㅓㅣ나어리나ㅓㅇ린어리나어리ㅏㄴ어리나어ㅣ낭치나이낭리나ㅓㅇ린아ㅓㄹ"
+        android:textSize="13dp"
+        app:autoSizeStepGranularity="1sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_constraintStart_toStartOf="@id/img_cst"
+        app:layout_constraintEnd_toEndOf="@id/guideline"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
