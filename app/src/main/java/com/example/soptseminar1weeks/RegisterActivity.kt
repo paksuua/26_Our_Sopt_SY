@@ -1,5 +1,6 @@
 package com.example.soptseminar1weeks
 
+import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -14,15 +15,6 @@ class RegisterActivity : AppCompatActivity() {
         setContentView(R.layout.activity_register)
 
         btn_register_rg.setOnClickListener {
-            /*if (et_password_rg.text.toString() == et_password_cf_rg.text.toString()){
-                App.prefs.id = et_id_rg.text.toString()
-                App.prefs.pwd = et_password_rg.text.toString()
-
-                val intent = Intent(this,LoginActivity::class.java)
-                startActivity(intent)
-            }else{
-                Toast.makeText(this, "비밀번호를 확인해주세요.", Toast.LENGTH_LONG).show()
-            }*/
             if (et_password_rg.text.toString() != et_password_cf_rg.text.toString()){
                 Toast.makeText(this, "비밀번호를 확인해주세요.", Toast.LENGTH_LONG).show()
             }else if (et_password_rg.text.isNullOrEmpty()&& et_password_cf_rg.text.isNullOrEmpty()){
@@ -32,7 +24,10 @@ class RegisterActivity : AppCompatActivity() {
                 App.prefs.pwd = et_password_rg.text.toString()
 
                 val intent = Intent(this,LoginActivity::class.java)
-                startActivity(intent)
+                intent.putExtra("ID", et_id_rg.text.toString())
+                intent.putExtra("PASSWORD", et_password_rg.text.toString())
+                setResult(Activity.RESULT_OK, intent)
+                startActivityForResult(intent,2)
             }
         }
     }
