@@ -1,6 +1,6 @@
 # [Read Me]
 
-### - margin과 ConstraintLayout의 제약의 선후조건#
+### - margin과 ConstraintLayout의 제약의 선후조건
 
 margin값이 적용 된 후의 컴포넌트의 위치를 기준으로 다른 컴포넌트가 위치제약을 걸게 된다.
 
