@@ -6,8 +6,9 @@ margin값이 적용 된 후의 컴포넌트의 위치를 기준으로 다른 컴
 
 
 ### - Guideline #
-
+```
 <androidx.constraintlayout.widget.Guideline android:id="@+id/guideline" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.5" android:orientation="vertical" />
+```
 
 layout_constraintGuide_percent
 세로 가이드라인 선을 사용하기 위해서 
