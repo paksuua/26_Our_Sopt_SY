@@ -10,6 +10,9 @@
     <color name="colorLightGray">#f1f1f1</color>
     <color name="colorBlue">#1B3180</color>
     <color name="colorWhite">#FFFFFF</color>
-    <color name="colorPrimary">#074A92</color>
+    <color name="colorPrimary">#143D95</color>
+    <color name="colorPrimaryDark">#08338d</color>
+    <color name="colorAccent">#6193FF</color>
     <color name="white">#ffffff</color>
+    <color name="dark_white">#C1C1C1</color>
 </resources>
