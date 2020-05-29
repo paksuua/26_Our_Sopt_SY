@@ -14,7 +14,6 @@
         android:layout_margin="20dp"
         android:src="@drawable/rooky"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="1:1"/>
     <TextView
         android:id="@+id/tv_title"
@@ -44,16 +43,50 @@
         android:orientation="vertical"
         app:layout_constraintGuide_begin="200dp"/>
 
+
+
     <TextView
-        android:id="@+id/tv_sub"
-        android:layout_width="match_parent"
+        android:id="@+id/tv_sub1"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="ㄴㅇ린아ㅓㅣ나어리나ㅓㅇ린어리나어리ㅏㄴ어리나어ㅣ낭치나이낭리나ㅓㅇ린아ㅓㄹ"
+        android:layout_marginVertical="20dp"
+        android:text="●치킨 주문시 100%국내산 ●치킨 주문시 콜라 별도입니다 ●다양한 사이드메뉴 주문 가능"
         android:textSize="13dp"
         app:autoSizeStepGranularity="1sp"
         app:layout_constraintTop_toBottomOf="@id/tv_title"
         app:layout_constraintStart_toStartOf="@id/img_cst"
         app:layout_constraintEnd_toEndOf="@id/guideline"/>
+
+    <ImageView
+        android:id="@+id/iv_star"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintStart_toStartOf="@id/tv_sub1"
+        app:layout_constraintTop_toBottomOf="@id/tv_sub1"
+        android:src="@drawable/ic_star_black_24dp"/>
+    <TextView
+        android:id="@+id/tv_sub2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="4.7(307), 배달비 2,000원"
+        android:textSize="13dp"
+        android:textColor="#000000"
+        app:autoSizeStepGranularity="1sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_sub1"
+        app:layout_constraintStart_toEndOf="@id/iv_star"
+        app:layout_constraintEnd_toEndOf="@id/guideline"/>
+    <TextView
+        android:id="@+id/tv_sub3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:padding="3dp"
+        android:background="@drawable/bg_blue"
+        android:text="2,000원 할쿠폰"
+        android:textSize="13dp"
+        android:textColor="#000000"
+        app:autoSizeStepGranularity="1sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_sub2"
+        app:layout_constraintStart_toStartOf="@id/iv_star"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
